@@ -38,7 +38,7 @@ class TransformerClassifier(BaseClassifier):
     def __init__(self, name_or_path: str | Path, device: str | None = None, max_length: int = 256):
         self.device = device or pick_device()
         self.tokenizer = AutoTokenizer.from_pretrained(str(name_or_path))
-        self.model = AutoModelForSequenceClassification.from_pretrained(str(name_or_path)).to(self.device).eval()
+        self.model = AutoModelForSequenceClassification.from_pretrained(str(name_or_path), use_safetensors=True).to(self.device).eval()
         # The model config stores the class names, e.g. {0: "negative", 1: "neutral", 2: "positive"}.
         id2label = self.model.config.id2label
         self.labels = [id2label[i].lower() for i in range(len(id2label))]
