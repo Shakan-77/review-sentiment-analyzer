@@ -1,0 +1,100 @@
+{
+  "baseline": {
+    "amazon": {
+      "accuracy": 0.9134,
+      "macro_f1": 0.9133999133999133,
+      "reviews_per_sec": 5105.035118002476,
+      "confusion_matrix": [
+        [
+          2281,
+          219
+        ],
+        [
+          214,
+          2286
+        ]
+      ]
+    },
+    "imdb": {
+      "accuracy": 0.874,
+      "macro_f1": 0.873878797524421,
+      "reviews_per_sec": 1744.1220713794885,
+      "confusion_matrix": [
+        [
+          905,
+          95
+        ],
+        [
+          157,
+          843
+        ]
+      ]
+    }
+  },
+  "roberta": {
+    "amazon": {
+      "accuracy": 0.9162,
+      "macro_f1": 0.9161601559525149,
+      "reviews_per_sec": 164.6244832494483,
+      "confusion_matrix": [
+        [
+          2236,
+          264
+        ],
+        [
+          155,
+          2345
+        ]
+      ],
+      "neutral_rate": 0.0664
+    },
+    "imdb": {
+      "accuracy": 0.811,
+      "macro_f1": 0.8108999660820575,
+      "reviews_per_sec": 122.02518971301546,
+      "confusion_matrix": [
+        [
+          834,
+          166
+        ],
+        [
+          212,
+          788
+        ]
+      ],
+      "neutral_rate": 0.203
+    }
+  },
+  "distilbert": {
+    "amazon": {
+      "accuracy": 0.9494,
+      "macro_f1": 0.9493995445959014,
+      "reviews_per_sec": 229.93149941332794,
+      "confusion_matrix": [
+        [
+          2381,
+          119
+        ],
+        [
+          134,
+          2366
+        ]
+      ]
+    },
+    "imdb": {
+      "accuracy": 0.905,
+      "macro_f1": 0.9049976249406235,
+      "reviews_per_sec": 151.09675904011158,
+      "confusion_matrix": [
+        [
+          910,
+          90
+        ],
+        [
+          100,
+          900
+        ]
+      ]
+    }
+  }
+}

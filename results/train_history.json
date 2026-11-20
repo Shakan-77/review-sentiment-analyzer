@@ -1,0 +1,30 @@
+{
+  "args": {
+    "model": "distilbert/distilbert-base-uncased",
+    "n_train": 60000,
+    "epochs": 2,
+    "batch_size": 16,
+    "lr": 3e-05,
+    "max_length": 256,
+    "seed": 42
+  },
+  "final_batch_size": 16,
+  "grad_accum_steps": 1,
+  "total_minutes": 20.7,
+  "history": [
+    {
+      "accuracy": 0.95,
+      "macro_f1": 0.9499967997951868,
+      "epoch": 1,
+      "train_loss": 0.2080244375149409,
+      "minutes": 8.42
+    },
+    {
+      "accuracy": 0.954,
+      "macro_f1": 0.953997055811572,
+      "epoch": 2,
+      "train_loss": 0.10154653518001239,
+      "minutes": 12.05
+    }
+  ]
+}
